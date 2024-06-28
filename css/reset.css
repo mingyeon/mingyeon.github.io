@@ -17,7 +17,8 @@
 
 ul,
 ol,
-dl {
+dl,
+li {
     list-style: none;
 }
 
