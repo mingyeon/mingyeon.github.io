@@ -6,13 +6,10 @@
     font-weight: inherit;
 }
 
-.blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+*::before,
+*::after {
+    /* content: ""; */
+    box-sizing: border-box;
 }
 
 ul,
@@ -32,8 +29,9 @@ body {
 }
 
 img {
-    vertical-align: middle;
+    vertical-align: top;
     max-width: 100%;
+    border: 0;
 }
 
 button {
@@ -43,7 +41,23 @@ button {
     cursor: pointer;
 }
 
+address,
+i,
+em {
+    font-style: normal;
+}
+
 p {
     line-height: 1.5s;
     word-break: keep-all;
+}
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }

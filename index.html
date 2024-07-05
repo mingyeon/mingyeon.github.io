@@ -4,291 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>블랙하비</title>
+    <title>compose coffee</title>
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/custom.js"></script>
 </head>
 
 <body>
-    <div id="skip">
-        <a href="#content">콘텐츠 바로가기</a>
-    </div>
-
-    <header id="header">
-        <div class="inner">
+    <hearder id="header">
+        <div class="hd_wrap">
             <h1>
-                <a href=""><span class="blind">블랙하비 리뉴얼</span></a>
+                <a href=""><span class="blind">compose coffee</span></a>
             </h1>
-            <nav id="gnb">
+
+            <nav class="gnb">
                 <ul>
-                    <li><a href="">제품구매</a></li>
-                    <li><a href="">구매후기</a></li>
-                    <li><a href="">이벤트</a></li>
-                    <li><a href="">마이쇼핑</a></li>
+                    <li><a href="">브랜드</a>
+                        <ul>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="">비터홀릭</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">프렌차이즈</a>
+                        <ul>
+                            <li><a href="">국내 가맹문의</a></li>
+                            <li><a href="">인테리어</a></li>
+                            <li><a href="">해외 가맹문의</a></li>
+                            <li><a href="">제휴 및 제안</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">메뉴</a>
+                        <ul>
+                            <li><a href="">시즌메뉴</a></li>
+                            <li><a href="">커피</a></li>
+                            <li><a href="">스무디</a></li>
+                            <li><a href="">에이드</a></li>
+                            <li><a href="">티</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">스토어</a>
+                        <ul>
+                            <li><a href="">매장찾기</a></li>
+                            <li><a href="">컴포즈마켓</a></li>
+                            <li><a href="">고객의소리</a></li>
+                            <li><a href="">고객의소리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">소식</a>
+                        <ul>
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">뉴스</a></li>
+                            <li><a href="">이벤트</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
+
             <div class="utils">
-                <ul>
-                    <li><a href=""><i class="xi-market"></i></a></li>
-                    <li><a href=""><i class="xi-search"></i></a></li>
-
-                    <div class="lang">
-                        <a href=""><i class="xi-globus"></i></a>
-                        <ul class="lnk">
-                            <li><a href="">kr</a></li>
-                            <li><a href="">en</a></li>
-                            <li><a href="">jp</a></li>
-                            <li><a href="">ch</a></li>
-                        </ul>
-                    </div>
-
-                    <li><a href=""><i class="xi-bars"></i></a></li>
-                </ul>
+                <a href="">로그인</a>
+                <a href="">join</a>
+                <div class="lang">
+                    <a href="">kr</a>
+                    <ul class="lnk">
+                        <li><a href="">en</a></li>
+                        <li><a href="">jp</a></li>
+                        <li><a href="">ch</a></li>
+                    </ul>
+                </div>
+                <a href="" class="cart"><img src="./images/shopping-cart_w.svg" alt=""></a>
+                <a href="" class="menu"><img src="./images/menu_w.svg" alt=""></a>
             </div>
         </div>
-    </header>
+    </hearder>
 
-    <main id="content">
-        <section id="main_video">
-            <div id="m_video">
-                <video src="./img/blackhobby_movie.mp4" muted autoplay playsinline loop></video>
-            </div>
-            <div class="scroll">
-                scroll
-            </div>
-        </section>
-
-        <section id="main_product">
-            <div class="tit">
-                <h2>Best Item</h2>
-                <p>블랙하비, 이달의 인기상품을 확인해보세요!</p>
-            </div>
-            <div class="main_product_slide">
-                <div class="itm itm01">
-                    <div class="pic">
-                        <a href=""><img src="./img/main_product_01_1.png" alt=""></a>
-                    </div>
-                    <div class="desc">
-                        <a href=""><strong>[457] 블랙하비 피에르 100ml 드레스퍼퓸</strong></a>
-                        <p>30, 000원</p>
-                    </div>
-                </div>
-                <div class="itm itm02">
-                    <div class="pic">
-                        <a href=""><img src="./img/main_product_03_1.png" alt=""></a>
-                    </div>
-                    <div class="desc">
-                        <a href=""><strong>[415] 블랙하비 페르몬 4ml 드레스퍼퓸</strong></a>
-                        <p>3, 900원</p>
-                    </div>
-                </div>
-                <div class="itm itm03">
-                    <div class="pic">
-                        <a href=""><img src="./img/main_product_04_1.png" alt=""></a>
-                    </div>
-                    <div class="desc">
-                        <a href=""><strong>[218] 블랙하비 소프트티 100ml 드레스퍼퓸</strong></a>
-                        <p>30, 000원</p>
-                    </div>
-                </div>
-                <div class="itm itm04">
-                    <div class="pic">
-                        <a href=""><img src="./img/main_product_09_1.png" alt=""></a>
-                    </div>
-                    <div class="desc">
-                        <a href=""><strong>[218] 블랙하비 새드던 4ml 드레스퍼퓸</strong></a>
-                        <p>3, 900원</p>
-                    </div>
-                </div>
-                <div class="itm itm05">
-                    <div class="pic">
-                        <a href=""><img src="./img/main_product_05_1.png" alt=""></a>
-                    </div>
-                    <div class="desc">
-                        <a href=""><strong>[164] 블랙하비 베이 100ml 드레스퍼퓸</strong></a>
-                        <p>30, 000원</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="arrows">
-                <button class="prev">
-                    <i class="xi-angle-left"></i>
-                </button>
-                <button class="next">
-                    <i class="xi-angle-right"></i>
-                </button>
-            </div>
-        </section>
-
-        <section id="main_banner">
-            <div class="Tit">
-                <h2>All Scent All Here</h2>
-                <p>Experience our scent in BLACKHOBBY</p>
-            </div>
-            <div class="inner">
-                <div class="ban">
-                    <a href=""><img src="./img/main_banner01_1.jpg" alt=""></a>
-                    <a href="">
-                        <p>4ml</p>
-                    </a>
-                </div>
-                <div class="ban">
-                    <a href=""><img src="./img/main_banner02_1.jpg" alt=""></a>
-                    <a href="">
-                        <p>30ml</p>
-                    </a>
-                </div>
-                <div class="ban">
-                    <a href=""><img src="./img/main_banner03_1.jpg" alt=""></a>
-                    <a href="">
-                        <p>100ml</p>
-                    </a>
-                </div>
-                <div class="ban">
-                    <a href=""><img src="./img/main_banner04_1.jpg" alt=""></a>
-                    <a href="">
-                        <p>GIFT</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="main_content">
-            <div class="txt">
-                <h2>New Items</h2>
-                <p>업데이트되는 신상품을 가장 먼저 만나보세요!</p>
-            </div>
-            <div class="inner">
-                <div class="up">
-                    <div class="itm01">
-                        <div class="draw">
-                            <a href=""><img src="./img/main_content01_1.png" alt=""></a>
-                        </div>
-                        <div class="ex">
-                            <a href=""><strong>[457] 블랙하비 피에르 100ml 드레스퍼퓸</strong></a>
-                            <p>30, 000원</p>
-                        </div>
-                    </div>
-                    <div class="itm02">
-                        <div class="draw">
-                            <a href=""><img src="./img/main_content02_1.png" alt=""></a>
-                        </div>
-                        <div class="ex">
-                            <a href=""><strong>[505] 블랙하비 로즈솝 30ml 드레스퍼퓸</strong></a>
-                            <p>12, 900원</p>
-                        </div>
-                    </div>
-                    <div class="itm03">
-                        <div class="draw">
-                            <a href=""><img src="./img/main_content03_1.png" alt=""></a>
-                        </div>
-                        <div class="ex">
-                            <a href=""><strong>[415] 블랙하비 페르몬 4ml 드레스퍼퓸</strong></a>
-                            <p>3, 900원</p>
-                        </div>
-                    </div>
-                    <div class="itm04">
-                        <div class="draw">
-                            <a href=""><img src="./img/main_content04_1.png" alt=""></a>
-                        </div>
-                        <div class="ex">
-                            <a href=""><strong>[218] 블랙하비 소프트티 100ml 드레스퍼퓸</strong></a>
-                            <p>30, 000원</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="itm05">
-                        <div class="draw">
-                            <a href=""><img src="./img/main_content05_1.png" alt=""></a>
-                        </div>
-                        <div class="ex">
-                            <a href=""><strong>[504] 블랙하비 우디크림 30ml 드레스퍼퓸</strong></a>
-                            <p>12, 900원</p>
-                        </div>
-                    </div>
-                    <div class="itm06">
-                        <div class="draw">
-                            <a href=""><img src="./img/main_content06_1.png" alt=""></a>
-                        </div>
-                        <div class="ex">
-                            <a href=""><strong>[294] 블랙하비 앰버 바닐라 4ml 드레스퍼퓸</strong></a>
-                            <p>3, 900원</p>
-                        </div>
-                    </div>
-                    <div class="itm07">
-                        <div class="draw">
-                            <a href=""><img src="./img/main_content07_1.png" alt=""></a>
-                        </div>
-                        <div class="ex">
-                            <a href=""><strong>[340] 블랙하비 인센스 100ml 드레스퍼퓸</strong></a>
-                            <p>30, 000원</p>
-                        </div>
-                    </div>
-                    <div class="itm08">
-                        <div class="draw">
-                            <a href=""><img src="./img/main_content08_1.png" alt=""></a>
-                        </div>
-                        <div class="ex">
-                            <a href=""><strong>[503] 블랙하비 보이지 30ml 드레스퍼퓸</strong></a>
-                            <p>12, 900원</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <main id="main">
+        <section class="main_movie">
+            <div id="bgVideo" class="palyer" data-property=""></div>
         </section>
     </main>
 
-    <footer id="footer">
-        <div class="inner">
-            <nav class="f_gnb">
-                <ul>
-                    <li><a href="">회사소개</a></li>
-                    <li><a href="">이용약관</a></li>
-                    <li><a href="" class="b">개인정보</a></li>
-                    <li><a href="">가이드</a></li>
-                </ul>
-            </nav>
-            <div class="cof">
-                <ul>
-                    <li>대표자: 강마테오</li>
-                    <li>사업자등록번호663-05-00524</li>
-                    <li>통신판매업신고: 제2016-대전서구-0867호 <a href="">[사업자정보확인]</a></li>
-                </ul>
-            </div>
-            <div class="ceo">
-                <ul>
-                    <li>대표전화070-8098-9486</li>
-                    <li>주소: 35329 대전광역시 서구 배재로 186 (도마동) 2층</li>
-                </ul>
-            </div>
-            <div class="info">
-                <ul>
-                    <li>개인정보보호책임자: <a href="">강마태오(vclassics@naver.com)</a></li>
-                    <address>&copy;블랙하비 . All rights reserved.</address>
-                </ul>
-            </div>
-            <div class="f_lnk">
-                <a href="https://www.instagram.com/"><i class="xi-instagram"></i></a>
-                <a href="https://www.youtube.com/"><i class="xi-youtube-play"></i></a>
-            </div>
-        </div>
-
-    </footer>
-
-    <div class="consul">
-        <button>
-            <i class="xi-speech"></i>
-        </button>
-    </div>
+    <footer id="footer"></footer>
 </body>
 
 </html>
