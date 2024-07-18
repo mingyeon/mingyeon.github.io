@@ -10,4 +10,24 @@ $(function () {
         showControls: false,
         playOnlyIfVisible: true,
     })
+
+    const mainVisualSlide = new Swiper('.mainVisualSlide', {
+        loop: true,
+        speed: 1000,
+        autoplay: {},
+
+        navigation: {
+            nextEl: '.mainVisual .arrows .next',
+            prevEl: '.mainVisual .arrows .prev',
+        }
+    });
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        if (sct > 0) {
+            $('#header').addClass('on')
+        } else {
+            $('#header').removeClass('on')
+        }
+    });
 });
