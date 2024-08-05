@@ -1041,11 +1041,12 @@
         margin: 0 auto;
 
         flex-direction: column;
-        margin-left: 80px;
+        margin-left: 55px;
     }
 
     .mainNotice .inner>* {
         flex: 1;
+        width: 80%;
     }
 
     .mainNotice .inner h3 {
@@ -1194,7 +1195,7 @@
     #footer {
         background: #333;
         color: #ddd;
-        padding: 60px 0;
+        padding: 60px 0 60px 20px;
     }
 
     #footer .ft_custom {
