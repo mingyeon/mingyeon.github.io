@@ -4,6 +4,24 @@ $(function () {
         $(this).next().toggle();
     });
 
+    // $('#bgVideo').YTPlayer({
+    //     videoURL: "https://www.youtube.com/embed/krwiZ7q9xC8",
+    //     containment: '.main_movie',
+    //     showControls: false,
+    //     playOnlyIfVisible: true,
+    // })
+
+    const mainVisualSlide = new Swiper('.mainVisualSlide', {
+        loop: true,
+        speed: 1000,
+        autoplay: {},
+
+        navigation: {
+            nextEl: '.mainVisual .arrows .next',
+            prevEl: '.mainVisual .arrows .prev',
+        }
+    });
+
     $(window).on('scroll', function () {
         let sct = $(window).scrollTop();
         if (sct > 0) {
@@ -13,50 +31,16 @@ $(function () {
         }
     });
 
-    const mainVisualSlide = new Swiper('.mainVisualSlide', {
-        loop: true,
-        autoplay: true,
-        speed: 1000,
-
-        navigation: {
-            nextEl: '.mainVisual .arrows .next',
-            prevEl: '.mainVisual .arrows .prev'
-        }
-    })
-
-    $('.mainNews .tab_line button').on('click', function () {
-        let idx = $(this).index();
-        $('.mainNews .slide').eq(idx).addClass('on').siblings().removeClass('on');
-        $(this).addClass('on').siblings().removeClass('on');
-    })
-
-    const slide01 = new Swiper('.slide', {
-        loop: true,
-        slidesPerView: 4,
-
-        navigation: {
-            nextEl: '.mainNews .arrows01 .next',
-            prevEl: '.mainNews .arrows01 .prev'
-        }
+    $(window).on('resize', function () {
+        $('#header .gnb').removeClass('on');
+        $('#header .gnb>ul>li ul').removeAttr('style');
     });
 
-
-
-    const right_con = new Swiper('.right_con', {});
-
-    $('.mainNetwork .inner .right .right_tab button').on('click', function () {
-        let idx = $(this).index();
-        $(this).addClass('on').siblings().removeClass('on');
-        right_con.slideToLoop(idx)
-    })
-
-    $('.f_lnk').on('change', function () {
-        let lnk = $(this).val();
-        console.log(lnk);
-
-        if (lnk) {
-            window.open(lnk)
+    $('#header .gnb>ul>li>a').on('click', function (e) {
+        if (('#header .gnb').hasClass('on')) {
+            e.preventDefault();
+            $(this).next().stop().slideDown();
+            $(this).parent().siblings().find('ul').stop().slideUp();
         }
     })
-
 });
